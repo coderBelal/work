@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        /* Custom scroll for slider */
+        .slider {
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          gap: 1rem;
+        }
+        .slider::-webkit-scrollbar {
+          display: none;
+        }
+        .slider > div {
+          scroll-snap-align: start;
+          flex-shrink: 0;
+          width: 100%;
+          max-width: 250px;
+        }
+      </style>
+</head>
+<body>
+ <!-- Navbar Start  -->
+<!--   
+     <div class="text-center flex justify-between bg-gray-200 text-sm py-1">
+        Largest Gadget Site in Bangladesh
+        <span class="material-icons cursor-pointer text-gray-600 text-xl">account_circle</span>
+      </div>
+     
+    
+      <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+          
+   
+          <div class="flex items-center space-x-2">
+            <img src="https://via.placeholder.com/40" alt="Logo" class="w-10 h-10">
+            <span class="text-2xl font-semibold">MobileMaya</span>
+          </div>
+    
+           
+          <div class="flex items-center w-1/2 border rounded-md overflow-hidden">
+            <input type="text" placeholder="What are you looking for?" class="w-full px-4 py-2 border-r border-gray-300 outline-none">
+            <select class="px-2 py-2 text-gray-600 bg-gray-100 border-r border-gray-300">
+              <option>All</option>
+               
+            </select>
+            <button class="px-4 py-2 bg-gray-200 text-gray-700 hover:bg-gray-300">
+              🔍
+            </button>
+          </div>
+    
+           
+          <div class="flex items-center space-x-4">
+            
+            <div class="relative">
+              <span class="material-icons cursor-pointer text-gray-600 text-xl">notifications</span>
+              <span class="absolute top-0 right-0 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">9+</span>
+            </div>
+          
+            <span class="material-icons cursor-pointer text-gray-600 text-xl">account_circle</span>
+          </div>
+        </div>
+    
+      
+        <nav class="bg-gray-100 mt-4">
+          <div class="container mx-auto px-4">
+            <ul class="flex space-x-6 text-sm text-gray-600">
+              <li><a href="#" class="hover:text-gray-800">Home</a></li>
+              <li><a href="#" class="hover:text-gray-800">Top 10</a></li>
+              <li><a href="#" class="hover:text-gray-800">Brands</a></li>
+              <li><a href="#" class="hover:text-gray-800">Mobile Collections</a></li>
+              <li><a href="#" class="hover:text-gray-800">Mobiles</a></li>
+              <li><a href="#" class="hover:text-gray-800">Price List</a></li>
+              <li><a href="#" class="hover:text-gray-800">Compare</a></li>
+              <li><a href="#" class="hover:text-gray-800">Showrooms</a></li>
+              <li><a href="#" class="hover:text-gray-800">Service Centers</a></li>
+              <li><a href="#" class="hover:text-gray-800">Reviews</a></li>
+              <li><a href="#" class="hover:text-gray-800">News & Tips</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>   -->
+  <!-- Navbar end -->
+   <!-- price section start  -->
+   <div class="container mx-auto py-8 px-4">
+    <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Find a Mobile Section -->
+      <div class="bg-white shadow-md p-6 rounded-lg">
+        <h2 class="text-center text-lg font-bold text-gray-700 mb-4">LETS FIND A MOBILE</h2>
+
+        <!-- Price Slider -->
+        <div class="flex items-center justify-between mb-4">
+          <input type="range" min="1000" max="50000" value="1599" class="w-full h-1 bg-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 cursor-pointer">
+        </div>
+
+        <!-- Price Input Fields -->
+        <div class="flex items-center justify-between mb-4">
+          <label class="text-sm font-semibold text-gray-500">Tk.</label>
+          <input type="number" value="1599" class="w-24 px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 text-center">
+          <label class="text-sm font-semibold text-gray-500">Tk.</label>
+          <input type="number" value="28999" class="w-24 px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 text-center">
+        </div>
+
+        <!-- Find Products Button -->
+        <button class="w-full py-2 mt-2 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700">
+          FIND PRODUCTS &gt;
+        </button>
+      </div>
+
+      <!-- By Brand Section -->
+      <div class="bg-white shadow-md p-6 rounded-lg">
+        <h3 class="text-md font-semibold text-gray-700 mb-4">By Brand</h3>
+        <ul class="space-y-1 text-blue-600 text-sm">
+          <li><a href="#" class="hover:underline">Samsung</a></li>
+          <li><a href="#" class="hover:underline">OnePlus</a></li>
+          <li><a href="#" class="hover:underline">Xiaomi</a></li>
+          <li><a href="#" class="hover:underline">Motorola</a></li>
+          <li><a href="#" class="hover:underline">Asus</a></li>
+          <li><a href="#" class="hover:underline">Vivo</a></li>
+          <li><a href="#" class="hover:underline">Apple</a></li>
+          <li><a href="#" class="hover:underline">Realme</a></li>
+          <li><a href="#" class="hover:underline">Nokia</a></li>
+          <li><a href="#" class="hover:underline">Google</a></li>
+          <li><a href="#" class="hover:underline">Oppo</a></li>
+          <li><a href="#" class="hover:underline">Micromax</a></li>
+        </ul>
+      </div>
+
+      <!-- By Features Section -->
+      <div class="bg-white shadow-md p-6 rounded-lg">
+        <h3 class="text-md font-semibold text-gray-700 mb-4">By Features</h3>
+        <ul class="space-y-1 text-blue-600 text-sm">
+          <li><a href="#" class="hover:underline">4G VoLTE Mobile Phones</a></li>
+          <li><a href="#" class="hover:underline">5G Mobiles</a></li>
+          <li><a href="#" class="hover:underline">Punch-hole Camera Mobiles</a></li>
+          <li><a href="#" class="hover:underline">Waterproof Mobiles</a></li>
+          <li><a href="#" class="hover:underline">Slim Mobiles</a></li>
+          <li><a href="#" class="hover:underline">Lightweight Mobiles</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+     <!-- price section end  -->
+      <!-- product section one start -->
+      <div class="  mx-auto   container px-4">
+   
+        <div class="flex justify-between items-center mb-4">
+          <h1 class="text-2xl font-bold">Latest Mobile Phones</h1>
+          <button class="   px-4 py-2 rounded-lg">View More</button>
+        </div>
+      
+     
+        <div class="slider flex space-x-4 overflow-x-auto">
+       
+     
+  <div class="bg-white shadow-md rounded-lg p-4">
+    <div class="relative">
+      <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme C55" class="w-full h-40 object-cover rounded-t-md">
+      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+    </div>
+    <h3 class="text-gray-800 font-medium text-lg mt-2">Realme C55</h3>
+    <p class="text-blue-600 font-semibold">৳19,999 <span class="text-sm text-gray-500">(Official)</span></p>
+ 
+  </div>
+
+ 
+  <div class="bg-white shadow-md rounded-lg p-4">
+    <div class="relative">
+      <img src="https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Xiaomi Redmi 13" class="w-full h-40 object-cover rounded-t-md">
+      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+    </div>
+    <h3 class="text-gray-800 font-medium text-lg mt-2">Xiaomi Redmi 13</h3>
+    <p class="text-blue-600 font-semibold">৳17,999 <span class="text-sm text-gray-500">(Official)</span></p>
+    <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+  </div>
+
+ 
+  <div class="bg-white shadow-md rounded-lg p-4">
+    <div class="relative">
+      <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="OnePlus Nord CE4 Lite" class="w-full h-40 object-cover rounded-t-md">
+      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+    </div>
+    <h3 class="text-gray-800 font-medium text-lg mt-2">OnePlus Nord CE4 Lite</h3>
+    <p class="text-blue-600 font-semibold">৳27,999 <span class="text-sm text-gray-500">(Official)</span></p>
+    <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+  </div>
+
+ 
+  <div class="bg-white shadow-md rounded-lg p-4">
+    <div class="relative">
+      <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Vivo Y200 Pro" class="w-full h-40 object-cover rounded-t-md">
+      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+    </div>
+    <h3 class="text-gray-800 font-medium text-lg mt-2">Vivo Y200 Pro</h3>
+    <p class="text-blue-600 font-semibold">৳40,000 <span class="text-sm text-gray-500">(Unofficial)</span></p>
+    <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+  </div>
+
+ 
+  <div class="bg-white shadow-md rounded-lg p-4">
+    <div class="relative">
+      <img src="image5.jpg" alt="Realme C63" class="w-full h-40 object-cover rounded-t-md">
+      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+    </div>
+    <h3 class="text-gray-800 font-medium text-lg mt-2">Realme C63</h3>
+    <p class="text-blue-600 font-semibold">৳16,999 <span class="text-sm text-gray-500">(Official)</span></p>
+    <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+  </div>
+
+  
+  <div class="bg-white shadow-md rounded-lg p-4">
+    <div class="relative">
+      <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme Narzo 70" class="w-full h-40 object-cover rounded-t-md">
+      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+    </div>
+    <h3 class="text-gray-800 font-medium text-lg mt-2">Realme Narzo 70</h3>
+    <p class="text-blue-600 font-semibold">৳27,000 <span class="text-sm text-gray-500">(Unofficial)</span></p>
+    <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+  </div>
+
+</div>
+      
+    
+        </div>
+      </div>
+       <!-- product section one end -->
+        <!-- brand section start  -->
+       <div class="container mx-auto flex flex-col md:flex-row gap-4">
+        <!-- Product News Section -->
+        <div class="w-full md:w-2/3 bg-white p-4 rounded shadow">
+          <h2 class="text-lg font-semibold mb-4">Product News</h2>
+          <div class="space-y-4">
+            <!-- News Item -->
+            <div class="flex items-start gap-4 p-4 border rounded">
+              <img src="https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="News Image" class="w-20 h-20 object-cover rounded">
+              <div>
+                <h3 class="text-md font-semibold">This is new news new news</h3>
+                <p class="text-sm text-gray-600">Samsung Galaxy S24 series gets a Gold label in DXOMark scoring. The Galaxy S24 Ultra leads the char...</p>
+              </div>
+            </div>
+            <!-- Repeated News Item -->
+            <div class="flex items-start gap-4 p-4 border rounded">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="News Image" class="w-20 h-20 object-cover rounded">
+              <div>
+                <h3 class="text-md font-semibold">Samsung Galaxy S24 Ultra rated as the best display smartphone by DXOMark</h3>
+                <p class="text-sm text-gray-600">Samsung Galaxy S24 series gets a Gold label in DXOMark scoring. The Galaxy S24 Ultra leads the char...</p>
+              </div>
+            </div>
+            <!-- Add more news items as needed -->
+          </div>
+        </div>
+    
+        <!-- Brands Section -->
+        <div class="w-full md:w-1/3 bg-white p-4 rounded shadow">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-semibold">Brands</h2>
+            <a href="#" class="text-blue-500 text-sm">View All</a>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <!-- Brands -->
+            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm">Samsung</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Realme</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Xiaomi</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Apple</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Symphony</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Tecno</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Oppo</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Vivo</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">OnePlus</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Asus</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Huawei</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Honor</span>
+            <!-- More Brands -->
+            <button class="w-full text-blue-500 text-sm mt-2">Show More Brands</button>
+          </div>
+        </div>
+      </div>
+      <!-- brand section end -->
+       <!-- product section two start -->
+       <div class="container mx-auto py-8 px-4">
+        <!-- Section Header -->
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold text-gray-700">Latest Mobile Phones</h2>
+          <a href="#" class="text-blue-600 hover:underline">View More &gt;</a>
+        </div>
+    
+        <!-- Mobile Phones Grid -->
+        <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+          <!-- Product Card 1 -->
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme C55" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Realme C55</h3>
+            <p class="text-blue-600 font-semibold">৳19,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+          <!-- Product Card 2 -->
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Xiaomi Redmi 13" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Xiaomi Redmi 13</h3>
+            <p class="text-blue-600 font-semibold">৳17,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+          <!-- Product Card 3 -->
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="OnePlus Nord CE4 Lite" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">OnePlus Nord CE4 Lite</h3>
+            <p class="text-blue-600 font-semibold">৳27,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpgg" alt="OnePlus Nord CE4 Lite" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">OnePlus Nord CE4 Lite</h3>
+            <p class="text-blue-600 font-semibold">৳27,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="OnePlus Nord CE4 Lite" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">OnePlus Nord CE4 Lite</h3>
+            <p class="text-blue-600 font-semibold">৳27,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+          <!-- Add more product cards as needed -->
+          <!-- Product Card 4 -->
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Vivo Y200 Pro" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Vivo Y200 Pro</h3>
+            <p class="text-blue-600 font-semibold">৳40,000 <span class="text-sm text-gray-500">(Unofficial)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+          <!-- Product Card 5 -->
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme C63" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Realme C63</h3>
+            <p class="text-blue-600 font-semibold">৳16,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+          <!-- Product Card 6 -->
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme Narzo 70" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Realme Narzo 70</h3>
+            <p class="text-blue-600 font-semibold">৳27,000 <span class="text-sm text-gray-500">(Unofficial)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+        </div>
+        
+      </div>
+          <!-- product section two start -->
+           <!-- blog section start -->
+
+  <div class="container mx-auto bg-white p-6 rounded shadow">
+    <!-- Section Title -->
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-lg font-semibold">Latest Reviews</h2>
+      <a href="#" class="text-blue-500 text-sm">View More ›</a>
+    </div>
+
+    <!-- Reviews Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Review Card -->
+      <div class="bg-white border rounded shadow p-4">
+        <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg alt="Tecno Camon 20 Review" class="w-full h-32 object-cover rounded">
+        <div class="mt-2 text-xs text-gray-500">by Admin | July 7, 2024</div>
+        <h3 class="mt-1 text-md font-semibold">Tecno Camon 20 Full Review</h3>
+        <p class="text-sm text-gray-600 mt-1">The Tecno Camon 20 is a smartphone model released in 2024. It features a 6.78-inch AMOLED display p...</p>
+      </div>
+
+      <!-- Repeat for additional reviews -->
+      <div class="bg-white border rounded shadow p-4">
+        <img src="https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="OnePlus Nord CE4 Lite 5G Review" class="w-full h-32 object-cover rounded">
+        <div class="mt-2 text-xs text-gray-500">by Admin | July 7, 2024</div>
+        <h3 class="mt-1 text-md font-semibold">OnePlus Nord CE4 Lite 5G Full Review</h3>
+        <p class="text-sm text-gray-600 mt-1">OnePlus is one of the popular brands in the smartphone world that has been providing some top-qual...</p>
+      </div>
+
+      <div class="bg-white border rounded shadow p-4">
+        <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme Narzo 70 Pro Review" class="w-full h-32 object-cover rounded">
+        <div class="mt-2 text-xs text-gray-500">by Admin | July 7, 2024</div>
+        <h3 class="mt-1 text-md font-semibold">Realme Narzo 70 Pro Full Review</h3>
+        <p class="text-sm text-gray-600 mt-1">The Realme Narzo 70 Pro emerges as a mid-range contender, boasting a MediaTek chipset, a vibrant OLED...</p>
+      </div>
+
+      <div class="bg-white border rounded shadow p-4">
+        <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme 12 Pro Plus 5G Review" class="w-full h-32 object-cover rounded">
+        <div class="mt-2 text-xs text-gray-500">by Admin | July 7, 2024</div>
+        <h3 class="mt-1 text-md font-semibold">Realme 12 Pro Plus 5G Full Review</h3>
+        <p class="text-sm text-gray-600 mt-1">The Realme 12 Pro Plus 5G, launched in January 2024, achieves balance between performance and value...</p>
+      </div>
+    </div>
+  </div>
+            <!-- blog section enc -->
+             <!-- slider two   start -->
+             <div class="  mx-auto   container px-4">
+                 
+                <div class="flex justify-between items-center mb-4">
+                  <h1 class="text-2xl font-bold">Latest Mobile Phones</h1>
+                  <button class="   px-4 py-2 rounded-lg">View More</button>
+                </div>
+              
+             
+                <div class="slider flex space-x-4 overflow-x-auto">
+                 
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme C55" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Realme C55</h3>
+            <p class="text-blue-600 font-semibold">৳19,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+         
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Xiaomi Redmi 13" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Xiaomi Redmi 13</h3>
+            <p class="text-blue-600 font-semibold">৳17,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+    
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="OnePlus Nord CE4 Lite" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">OnePlus Nord CE4 Lite</h3>
+            <p class="text-blue-600 font-semibold">৳27,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+    
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Vivo Y200 Pro" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Vivo Y200 Pro</h3>
+            <p class="text-blue-600 font-semibold">৳40,000 <span class="text-sm text-gray-500">(Unofficial)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+   
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme C63" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Realme C63</h3>
+            <p class="text-blue-600 font-semibold">৳16,999 <span class="text-sm text-gray-500">(Official)</span></p>
+            
+            
+            
+          </div>
+    
+     
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <div class="relative">
+              <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Realme Narzo 70" class="w-full h-40 object-cover rounded-t-md">
+              <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">4.5 ★</span>
+            </div>
+            <h3 class="text-gray-800 font-medium text-lg mt-2">Realme Narzo 70</h3>
+            <p class="text-blue-600 font-semibold">৳27,000 <span class="text-sm text-gray-500">(Unofficial)</span></p>
+            <div class="
+            text-center ">
+               <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+           </div>
+          </div>
+    
+        </div>
+       
+                </div>
+              </div>
+              
+            
+              <!-- slider two end  -->
+               <!-- compare start  -->
+               <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-4">Popular Comparison</h2>
+                <div class="grid gap-9 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Comparison Card 1 -->
+                    <div class=" gap-4  rounded-lg p-4">
+                        <div class="flex justify-between">
+                            <div class="w-1/2 ">
+                                <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Samsung Galaxy M34 5G" class="mx-auto mb-2">
+                                <h3 class="text-lg font-semibold">Samsung Galaxy M34 5G</h3>
+                                <p class="text-green-600 font-bold">83%</p>
+                                <p class="text-gray-700 mt-2">Rs. 12,999</p>
+                            </div>
+                            <span class="flex items-center text-lg">VS</span>
+                            <div class="w-1/2 text-center">
+                                <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Tecno Pova 5 Pro 5G" class="mx-auto mb-2">
+                                <h3 class="text-lg font-semibold">Tecno Pova 5 Pro 5G</h3>
+                                <p class="text-green-600 font-bold">81%</p>
+                                <p class="text-gray-700 mt-2">Rs. 14,998</p>
+                            </div>
+                        </div>
+                        <div class="
+                        text-center ">
+                           <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+                       </div>
+                    </div>
+        
+                    <!-- Comparison Card 2 -->
+                    <div class="  rounded-lg p-4">
+                        <div class="flex justify-between">
+                            <div class="w-1/2 text-center">
+                                <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Samsung Galaxy F34 5G" class="mx-auto mb-2">
+                                <h3 class="text-lg font-semibold">Samsung Galaxy F34 5G</h3>
+                                <p class="text-green-600 font-bold">83%</p>
+                                <p class="text-gray-700 mt-2">Rs. 12,999</p>
+                            </div>
+                            <span class="flex items-center text-lg">VS</span>
+                            <div class="w-1/2 text-center">
+                                <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Samsung Galaxy M34 5G" class="mx-auto mb-2">
+                                <h3 class="text-lg font-semibold">Samsung Galaxy M34 5G</h3>
+                                <p class="text-green-600 font-bold">83%</p>
+                                <p class="text-gray-700 mt-2">Rs. 12,999</p>
+                            </div>
+                        </div>
+                        <div class="
+                        text-center ">
+                           <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+                       </div>
+                    </div>
+        
+                    <!-- Comparison Card 3 -->
+                    <div class="  rounded-lg p-4">
+                        <div class="flex justify-between">
+                            <div class="w-1/2 text-center">
+                                <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Oppo Reno10 Pro Plus" class="mx-auto mb-2">
+                                <h3 class="text-lg font-semibold">Oppo Reno10 Pro Plus</h3>
+                                <p class="text-green-600 font-bold">90%</p>
+                                <p class="text-gray-700 mt-2">Rs. 54,999</p>
+                            </div>
+                            <span class="flex items-center text-lg">VS</span>
+                            <div class="w-1/2 text-center">
+                                <img src=" https://i.postimg.cc/wxyMwqLP/product2-j9v-KW7j-B.jpg" alt="Nothing Phone 2" class="mx-auto mb-2">
+                                <h3 class="text-lg font-semibold">Nothing Phone 2</h3>
+                                <p class="text-green-600 font-bold">88%</p>
+                                <p class="text-gray-700 mt-2">Rs. 37,999</p>
+                            </div>
+                        </div>
+                        <div class="
+                         text-center ">
+                            <button class="mt-2 text-gray-500   text-lg font-medium hover:text-gray-800">+ Compare</button>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+                <!-- compare end  -->
+                 <!-- news letter start -->
+                      <!-- Subscription Section -->
+                       <div class="  bg-slate-100 px-5 py-6">
+  
+   
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+        <div class="flex items-center gap-2">
+          <span class="text-sm">📧 Subscribe for top stories & new launches</span>
+        </div>
+        <div class="flex w-full md:w-auto">
+          <input type="email" placeholder="Your Email Address" class="p-2 w-full md:w-64 rounded-l border-none outline-none">
+          <button class="bg-blue-600 hover:bg-blue-700  text-white px-4 py-2 rounded-r">Subscribe</button>
+        </div>
+      </div>
+  
+                       </div>
+    
+    
+  
+                  <!-- news letter end  -->
+                 <!-- footer start  -->
+
+  <!-- Footer Section -->
+  <footer class="  bg-gray-300 py-8">
+
+    <!-- Links and App Download Section -->
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Useful Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Useful Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="#" class="hover:underline">Terms and Condition</a></li>
+          <li><a href="#" class="hover:underline">DMCA</a></li>
+          <li><a href="#" class="hover:underline">Disclaimer</a></li>
+          <li><a href="#" class="hover:underline">FAQ</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Product Categories -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Product Categories</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Mobile Phones</a></li>
+          <li><a href="#" class="hover:underline">Tablets</a></li>
+          <li><a href="#" class="hover:underline">Watches</a></li>
+          <li><a href="#" class="hover:underline">Laptops</a></li>
+          <li><a href="#" class="hover:underline">Cameras</a></li>
+        </ul>
+      </div>
+
+      <!-- Download Our Apps -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Download Our Apps</h4>
+        <div class="space-y-2">
+          <a href="#"><img src=" https://i.postimg.cc/nhZLVqgb/google-play-apple-store-logo-icon-button-free-vector.jpg" alt="Google Play" class="w-32"></a>
+          
+        </div>
+      </div>
+
+      <!-- Logo (Optional) -->
+      <div class="flex justify-center lg:justify-start">
+        <img src="https://via.placeholder.com/150x50?text=Your+Logo" alt="Logo" class="w-40">
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container mx-auto px-4 mt-8 border-t border-gray-700 pt-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+      <p>© 2013-2024 MobileDokan.com | All Rights Reserved</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i> YouTube</a>
+      </div>
+    </div>
+  </footer>
+                  <!-- footer end -->
+</body>
+</html>
